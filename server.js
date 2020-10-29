@@ -24,11 +24,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // api routes
 app.use("/users", require("./users/users.controller"));
-app.use("/works", require("./works/works.controller"));
-app.use("/fuels", require("./fuels/fuels.controller"));
-app.use("/maintenances", require("./maintenances/maintenances.controller"));
-app.use("/transactions", require("./transactions/transactions.controller"));
-app.use("/picklists", require("./picklists/picklists.controller"));
 
 // global error handler
 app.use(errorHandler);
